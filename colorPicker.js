@@ -28,7 +28,7 @@ function init() {
 		});
 	}
 
-	playAgain.addEventListener("click", () => {newGame();});
+	playAgain.addEventListener("click", newGame);
 
 	for (var i = 0; i < levelButtons.length; i++) {
 		levelButtons[i].addEventListener("click", function() {
