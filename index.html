@@ -6,6 +6,32 @@
 	<link rel="stylesheet" type="text/css" href="colorPicker.css">
 </head>
 <body>
+	<a id="lightbox" href="#lightbox-popup">What is this?</a>
+	<div class="lightbox-target" id="lightbox-popup">
+		<div id="lightbox-content">	
+			<h2>Instructions</h2>
+			<h3>Select the square which matches the RGB color stated in the game title. Here is what to look for:</h3>
+			<p>The RGB color model adds different amounts (ranging from 0 - 255) of red, green and blue together to reproduce a broad array of colors.</p>
+			<div id="row">
+				<div id="lists">	
+					<ul id="primary">
+						<li class="colors">The RGB primary colors are:</li>
+						<li>RGB(255, 0, 0): <span id="red">RED</span></li>
+						<li>RGB(0, 255, 0): <span id="green">GREEN</span></li>
+						<li>RGB(0, 0, 255): <span id="blue">BLUE</span></li>
+					</ul>
+					<ul id="secondary">
+						<li class="colors">The RGB secondary colors are:</li>
+						<li>RGB(255, 255, 0): <span id="yellow">YELLOW</span></li>
+						<li>RGB(0, 255, 255): <span id="cyan">CYAN</span></li>
+						<li>RGB(255, 0, 255): <span id="magenta">MAGENTA</span></li>
+					</ul>
+				</div>
+				<img src="rgb-model.jpg" alt="RGB color model">
+			</div>
+		</div>
+		<a id="lightbox-close" href="#"></a>
+	</div>
 	<div id="headingContainer">
 		<h1>The Great<br><span id="pickedColorText"></span><br>Color Game</h1>
 	</div>
