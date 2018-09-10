@@ -1,6 +1,6 @@
-let numSquares = 6
-let colors = [];
-let pickedColor;
+var numSquares = 6
+var colors = [];
+var pickedColor;
 const squares = document.querySelectorAll(".square");
 const headingContainer = document.querySelector("#headingContainer");
 const playAgain = document.querySelector("#playAgain");
@@ -11,11 +11,11 @@ const result = document.querySelector("#result");
 init();
 
 function init() {
-	for (let i = 0; i < squares.length; i++) {
+	for (var i = 0; i < squares.length; i++) {
 		squares[i].addEventListener("click", function() {
-			let thisColor = this.style.backgroundColor;
+			var thisColor = this.style.backgroundColor;
 			if (thisColor == pickedColor) {
-				for (let j = 0; j < squares.length; j++) {
+				for (var j = 0; j < squares.length; j++) {
 					squares[j].style.backgroundColor = pickedColor;
 				}
 				result.innerHTML = "Correct!";
@@ -30,9 +30,9 @@ function init() {
 
 	playAgain.addEventListener("click", () => {newGame();});
 
-	for (let i = 0; i < levelButtons.length; i++) {
+	for (var i = 0; i < levelButtons.length; i++) {
 		levelButtons[i].addEventListener("click", function() {
-			for (let j = 0; j < levelButtons.length; j++) {
+			for (var j = 0; j < levelButtons.length; j++) {
 				levelButtons[j].classList.remove("selected");
 			}
 			this.classList.add("selected");
@@ -44,17 +44,17 @@ function init() {
 }
 
 function generateRandomColors(num) {
-	let arr = [];
-	for (let i = 0; i < num; i++) {
+	var arr = [];
+	for (var i = 0; i < num; i++) {
 		arr.push(randomColor());
 	}
 	return arr;
 }
 
 function randomColor() {
-	let red = Math.floor(Math.random() * 256);
-	let green = Math.floor(Math.random() * 256);
-	let blue = Math.floor(Math.random() * 256);
+	var red = Math.floor(Math.random() * 256);
+	var green = Math.floor(Math.random() * 256);
+	var blue = Math.floor(Math.random() * 256);
 	var color = `rgb(${red}, ${green}, ${blue})`;
 	return color;
 }
@@ -72,7 +72,7 @@ function newGame() {
 	pickedColor = pickColor();
 	pickedColorText.innerHTML = pickedColor;
 	
-	for (let i = 0; i < squares.length; i++) {
+	for (var i = 0; i < squares.length; i++) {
 		if (colors[i]) {
 			squares[i].style.display = "block";
 			squares[i].style.backgroundColor = colors[i];
