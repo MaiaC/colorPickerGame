@@ -52,7 +52,7 @@ button {
 }
 
 #playAgain {
-	width: 130px;
+	width: 105px;
 }
 
 button:hover {
@@ -71,7 +71,7 @@ button:hover {
 }
 
 #squaresContainer {
-	max-width: 600px;
+	width: 600px;
 	margin: 20px auto;
 }
 
@@ -86,4 +86,19 @@ button:hover {
 	-moz-transition: 0.4s;
 	cursor: pointer;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 630px) {
+	#squaresContainer, #optionsContainer div {
+		width: 300px;
+	}
+
+	.square {
+		width: 130px;
+		padding-bottom: 130px;
+	}
+
+	#result {
+		width: 85px;
+	}
 }
