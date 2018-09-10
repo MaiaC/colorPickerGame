@@ -80,7 +80,7 @@ button:hover {
 	margin: 10px;
 	border-radius: 30%;
 	float: left;
-	transition: 0.4s;
+	transition: background 0.4s;
 	-webkit-transition: 0.4s;
 	-moz-transition: 0.4s;
 	cursor: pointer;
