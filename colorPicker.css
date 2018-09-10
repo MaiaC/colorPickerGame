@@ -48,6 +48,7 @@ button {
 	transition: 0.4s;
 	-webkit-transition: 0.4s;
 	-moz-transition: 0.4s;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #playAgain {
@@ -84,4 +85,5 @@ button:hover {
 	-webkit-transition: 0.4s;
 	-moz-transition: 0.4s;
 	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
